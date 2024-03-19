@@ -139,7 +139,8 @@ public class BasicTransformations {
                                 map(Tuple3<String, Integer, Double> summary) {
                                     return new Tuple2(
                                             summary.f0, //Product name
-                                            summary.f2 / summary.f1); //Average Order Value by Product
+                                            summary.f2 / summary.f1 //Average Order Value by Product
+                                    );
                             }
                     } )
                     .print();
