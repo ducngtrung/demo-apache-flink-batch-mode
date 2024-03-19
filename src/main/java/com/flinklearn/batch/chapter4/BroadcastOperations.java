@@ -94,8 +94,8 @@ public class BroadcastOperations {
                             }
 
                         } )
-                        /* Pass dsDiscounts DataSet as broadcast variable to the runtime context
-                        using withBroadcastSet() function */
+                        /* Pass the dsDiscounts DataSet as broadcast variable to the runtime context
+                        using withBroadcastSet() function, name the broadcast variable as "bcDiscounts" */
                         .withBroadcastSet(dsDiscounts,"bcDiscounts");
 
             Utils.printHeader("Net Order Values by Order ID (top 10)");

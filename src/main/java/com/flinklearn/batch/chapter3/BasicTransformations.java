@@ -13,7 +13,7 @@ import java.util.List;
 import static org.apache.flink.api.java.aggregation.Aggregations.SUM;
 
 /*
-A simple Flink program that demonstrates Dataset API record-level operations (map, flatMap, filter)
+A Flink program that demonstrates Dataset API record-level operations (map, flatMap, filter)
 and aggregation operations (aggregate, groupBy, reduce).
 Running this program inside the IDE will create an embedded Apache Flink environment.
  */

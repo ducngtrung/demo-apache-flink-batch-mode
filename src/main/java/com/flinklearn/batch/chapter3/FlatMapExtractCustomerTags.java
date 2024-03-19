@@ -13,7 +13,7 @@ public class FlatMapExtractCustomerTags implements FlatMapFunction<
         @Override
         public void flatMap(
                 Tuple7<Integer, String, String, String, Integer, Double, String> order,
-                Collector<Tuple3<Integer, String, String>> collector
+                Collector<Tuple3<Integer, String, String>> tupleCollector
         ) {
 
             // Extract relevant columns from the master tuple
@@ -24,7 +24,7 @@ public class FlatMapExtractCustomerTags implements FlatMapFunction<
             /* Split the tags string. For each tag, collect the customer
             and the tag as a separate record */
             for (String tag : tags.split(":")) {
-                collector.collect(new Tuple3(id, customer, tag)); //use the Collector object to collect multiple tuples
+                tupleCollector.collect(new Tuple3(id, customer, tag)); //use the Collector object to collect multiple tuples
             }
 
         }
