@@ -17,6 +17,7 @@ A Flink program that demonstrates Dataset API record-level operations (map, flat
 and aggregation operations (aggregate, groupBy, reduce).
 Running this program inside the IDE will create an embedded Apache Flink environment.
  */
+
 public class BasicTransformations {
 
     public static void main(String[] args) {
@@ -37,12 +38,11 @@ public class BasicTransformations {
             DataSet<Tuple7<Integer, String, String, String,
                                         Integer, Double, String>> rawOrders
                     = env.readCsvFile("src/main/resources/sales_orders.csv")
-                            .ignoreFirstLine()  //the first line is header
-                            .parseQuotedStrings('\"')
-                            .types(Integer.class, String.class, String.class, String.class,
-                                    Integer.class, Double.class, String.class);
-                            /* Recall that Flink DataSets are strongly typed
-                            and need a schema for data stored in them. */
+                        .ignoreFirstLine()  //the first line is header
+                        .parseQuotedStrings('\"')
+                        .types(Integer.class, String.class, String.class, String.class,
+                                Integer.class, Double.class, String.class);
+                        /* Recall that Flink DataSets are strongly typed and need a schema for data stored in them. */
 
             Utils.printHeader("Raw orders read from CSV file (top 5)");
             // Call the print() method to trigger Flink execution. Here we print the first 5 tuples in the dataset.

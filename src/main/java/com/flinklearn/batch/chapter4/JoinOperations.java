@@ -13,6 +13,7 @@ import static org.apache.flink.api.java.aggregation.Aggregations.SUM;
 Join operations allow merging of two Datasets based on a common set of columns.
 They are useful for merging data from different data sources.
  */
+
 public class JoinOperations {
 
     public static void main(String[] args) {

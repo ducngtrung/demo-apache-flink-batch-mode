@@ -1,5 +1,5 @@
 
-This Apache Flink course is built using examples in Java 8. The student is expected to be familiar with the following aspects of Java programming
+These Apache Flink examples is built using Java 8. You should be familiar with the following aspects of Java programming:
 
 - Java syntax and programming techniques
 - Downloading and setting up Java 8
@@ -7,13 +7,12 @@ This Apache Flink course is built using examples in Java 8. The student is expec
 - Maven setup and use
 - Troubleshooting with Java, IntelliJ IDEA, Maven
 
-Please use the Java 8 Essential Training Course ( https://www.linkedin.com/learning/java-8-essential-training/ ) as reference, if you require additional guidance with these topics.
+Please refer to the **Java 8 Essential Training** course ( https://www.linkedin.com/learning/java-8-essential-training/ ) if you require additional guidance with these topics.
 
-This course also uses MySQL to demonstrate external data operations. The student should be familiar with the following aspects of MySQL
+There is one example in Chapter 4 that uses MySQL to demonstrate external data operations. You should be familiar with the following aspects of MySQL:
 
 - Downloading and Installing MySQL
 - Using MySQL client to create and manage schemas
 - Basic SQL concepts and syntax
 
-Please use the MySQL Installation and Configuration course ( https://www.linkedin.com/learning/mysql-installation-and-configuration/ ) as reference, if you require additional guidance with these topics.
-
+Please refer to the **MySQL Installation and Configuration** course ( https://www.linkedin.com/learning/mysql-installation-and-configuration/ ) if you require additional guidance with these topics.

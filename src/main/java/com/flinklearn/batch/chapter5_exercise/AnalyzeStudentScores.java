@@ -1,4 +1,4 @@
-package com.flinklearn.batch.chapter5;
+package com.flinklearn.batch.chapter5_exercise;
 
 import com.flinklearn.batch.common.Utils;
 import org.apache.flink.api.common.functions.MapFunction;
@@ -29,9 +29,9 @@ public class AnalyzeStudentScores {
             DataSet<Tuple4<String, String, Double, Double>> rawScores
 
                     = env.readCsvFile("src/main/resources/student_scores.csv")
-                    .ignoreFirstLine()
-                    .parseQuotedStrings('\"')
-                    .types(String.class, String.class, Double.class,Double.class);
+                        .ignoreFirstLine()
+                        .parseQuotedStrings('\"')
+                        .types(String.class, String.class, Double.class,Double.class);
 
             System.out.println("Raw Data Read :");
             rawScores.first(5).print();

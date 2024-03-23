@@ -24,6 +24,7 @@ and 'customer_summary' (with no data populated) in MySQL. You will use Flink to 
 perform computation and write output data to the 'customer_summary' table. The table creation scripts are available
 at src/main/resources/create_mysql_tables.sql.
  */
+
 public class ExternalDataOperations {
 
     public static void main(String[] args) {

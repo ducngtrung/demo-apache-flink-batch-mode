@@ -20,6 +20,7 @@ so a local copy is available for initial lookup.
 This program demonstrates using broadcast variables. We will create a map of discount rate for each product and then
 use it to compute discounted order value for each order in the sales_orders Dataset.
  */
+
 public class BroadcastOperations {
 
     public static void main(String[] args) {

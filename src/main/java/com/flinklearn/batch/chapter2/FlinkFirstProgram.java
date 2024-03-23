@@ -12,6 +12,7 @@ import java.util.List;
 A simple Flink program that counts the number of elements in a collection.
 Running this program inside the IDE will create an embedded Apache Flink environment.
  */
+
 public class FlinkFirstProgram {
 
     public static void main(String[] args) {

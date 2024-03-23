@@ -4,13 +4,12 @@ import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.tuple.Tuple7;
 import org.apache.flink.api.java.tuple.Tuple8;
 
-/*Takes a Tuple7 as input and returns a Tuple8 as output */
-
 public class MapComputeTotalOrderValue implements MapFunction<
         Tuple7<Integer, String, String, String, Integer, Double, String>, //Input Tuple
         Tuple8<Integer, String, String, String, Integer, Double, String, Double> //Output Tuple
         >
     {
+        //Takes a Tuple7 as input and returns a Tuple8 as output
         @Override
         public Tuple8<Integer,String, String,
                             String, Integer, Double, String, Double>
