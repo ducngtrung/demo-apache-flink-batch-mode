@@ -44,7 +44,7 @@ public class UsingPojoClasses {
                 = productVendor
                         /* Select the Vendor and the count of 1 per record.
                         Instead of using the tuple member identifiers (f0, f1,...),
-                        now we can reference attribute names of the POJO class. */
+                        now we can reference attribute names of the POJO class (for example, i.vendor). */
                         .map(i -> Tuple2.of(i.vendor, 1))
                         .returns(Types.TUPLE(Types.STRING, Types.INT))
                         .groupBy(0)   //Group by Vendor
