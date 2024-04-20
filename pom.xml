@@ -106,7 +106,6 @@ under the License.
 
 	<build>
 		<plugins>
-
 			<!-- Java Compiler -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
