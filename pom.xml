@@ -68,7 +68,6 @@ under the License.
 		</dependency>
 
 		<!-- Add connector dependencies here. They must be in the default scope (compile). -->
-
 		<!-- Example:
 		<dependency>
 			<groupId>org.apache.flink</groupId>
